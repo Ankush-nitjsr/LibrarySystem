@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="libraryStyling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap" rel="stylesheet">
+    
+</head>
+<body id="libraryPage">
+    <nav>
+        <div class="navbar">
+            <button id="library-button"><a href="#libraryPage">Digital Library</a></button>
+            <button><a href="#booksPage">Books</a></button>
+            <button><a href="#registerPage">Register</a></button>
+        </div>
+    </nav>
+    <section class="booksSection" id="booksPage">
+        <div>
+            <h1>Books</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Id</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>The Immortals of Meluha
+                            <table>
+                                <tr>
+                                    <td>Publication Date: 15 August 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count: 415 pages</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 9356290520</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Amish</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>The Secret of The Nagas
+                            <table>
+                                <tr>
+                                    <td>Publication Date: 15 August 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count: 398 pages</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 9356290601</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Amish</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>The Oath of The Vayuputras
+                            <table>
+                                <tr>
+                                    <td>Publication Date: 15 August 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count: 575 pages</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 9356290687</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Amish</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Ram - Scion of Ikshvaku
+                            <table>
+                                <tr>
+                                    <td>Publication Date: 15 August 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count: 500 pages</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 9356290792</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Amish</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Sita : Warrior of Mithila 
+                            <table>
+                                <tr>
+                                    <td>Publication Date: 15 August 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count: 376 pages</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN: 9356290911</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Amish</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <form action="" id="registerPage">
+        <div class="registration">
+            <h1>Register</h1>
+            <p>
+                <label for="firstName">First Name:</label>
+            </p>
+            <p>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" required>
+            </p>
+            <p>
+                <label for="lastName">Last Name:</label>
+            </p>
+            <p>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name" required>
+            </p>
+            <p>
+                <label for="dateOfBirth">Date of Birth:</label>
+            </p>
+            <p>
+                <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+            </p>
+            <p>
+                <label for="age">Age:</label>
+            </p>
+            <p>
+                <input type="number" name="age" id="age" placeholder="Enter your age" min="5" max="100" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+            </p>
+            <p>
+                <input type="email" name="email" id="email" placeholder="Enter email id" required>
+            </p>
+            <p>
+                <label for="password">Password:</label>
+            </p>
+            <p>
+                <input type="password" name="password" id="password" placeholder="password" required>
+            </p>
+            <p>
+                <label for="confirmPassword">Confirm Password:</label>
+            </p>
+            <p>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password" required>
+            </p>
+            <button id="regitration-button">Register</button>
+        </div>
+    </form>
+</body>
+</html>
